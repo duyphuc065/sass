@@ -1,0 +1,95 @@
+.footer {
+    background-color: $color-black-1;
+    padding: 40px 0;
+    position: relative;
+    background-image: url("../img/code-dark-watermark.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    h1 {
+        padding-bottom: 35px;
+        @include text($color-white-0, $fs-2, $fw-bold);
+    }
+
+    .footer__subcribe {
+        .footer__input {
+            background-color: $color-black-1;
+            border: 1px solid $color-grey-1;
+            padding: 15px;
+            margin-bottom: 50px;
+            width: 280px;
+            color: $color-white-0;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .btn-subcribe {
+            background-image: linear-gradient(to bottom, $color-blue-1, $color-blue-0);
+            box-shadow: 0 5px 10px 0 rgba(120, 141, 223, 0.51);
+            border: 0px;
+            @include text($color-white-0, $fs-0, $fw-normal);
+            letter-spacing: 0.5px;
+            margin-left: -5px;
+            padding: 16px 38px;
+        }
+    }
+
+    .footer__links {
+        ul {
+            li {
+                display: inline;
+
+                a {
+                    @include text($color-white-0, $fs-0, $fw-normal);
+                    margin-right: $mg-2;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__nex {
+        padding-bottom: 35px;
+        opacity: 0.5;
+
+        a {
+            @include text($color-white-0, $fs-0, $fw-normal);
+            text-decoration: none;
+        }
+    }
+
+    .footer__icon {
+        ul {
+            li {
+                display: inline;
+
+                &:first-child {
+                    opacity: 0.8;
+                    @include text($color-white-0, $fs-1, $fw-normal);
+                    margin-right: 25px;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    i {
+                        font-size:20px;
+                        text-align: center;
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        border: 2px solid white;
+                        color: $color-white-0;
+                        opacity: 0.8;
+                    }
+                }
+
+            }
+        }
+    }
+}

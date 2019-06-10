@@ -1,0 +1,23 @@
+.recognized{
+    padding:85px 0 109px;
+    h1{
+        @include text($color-black-0,$fs-3,$fw-bold);
+        margin-bottom: 60px;
+    }
+    .recognized__box{
+        border-radius:4px;
+        border:1px solid $color-white-1;
+        padding:45px 0;
+        box-shadow:0px 0px 38px 0 rgba(165, 168, 183, 0.5);
+        img{
+            margin-left:50px;
+        }
+    }
+    @media screen and (max-width:768px) {
+        .recognized__box{
+            img{
+                margin-left:0;
+            }
+        }
+    }
+}

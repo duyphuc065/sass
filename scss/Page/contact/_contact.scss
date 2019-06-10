@@ -1,0 +1,61 @@
+.contact {
+    padding-top: 200px;
+    margin-bottom:30px;
+
+    .contact__heading {
+        position: relative;
+        padding-bottom: 100px;
+
+        h1 {
+            @include text($color-black-0, $fs-3, $fw-bold);
+            padding: 68px 0px 25px 0;
+        }
+
+        .contact__image {
+            position: absolute;
+            width: 125px;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+
+        .form-control {
+            border-radius: 2px;
+            background-color: $color-white-0;
+            border: solid 1px #e0e3f3;
+            width: 100%;
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            text-align: left;
+            padding: 20px;
+        }
+    }
+
+    .contact__send {
+        border-radius: 2px;
+        background-image: linear-gradient(to bottom, $color-blue-1, $color-blue-0);
+        box-shadow: 0 5px 10px 0 rgba(120, 141, 223, 0.51);
+        padding: 10px 25px;
+        @include text($color-white-0,$fs-1,$fw-normal);
+        letter-spacing: 0.5px;
+        border: 0px;
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    .or{
+        font-size: 16px;
+        margin-bottom:30px;
+    }
+    .write{
+        margin-top: 30px;
+        font-size: 16px;
+        
+        span{
+            font-weight: $fw-bold;
+        }
+    }
+}

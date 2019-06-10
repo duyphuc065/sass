@@ -1,0 +1,30 @@
+.way{
+   margin-top:200px;
+    .way__content{
+        position: relative;
+        h1{
+            @include text($color-black-0,$fs-3,$fw-bold);
+            padding:68px 0px 25px 0;
+        }
+        .way__image{
+            position: absolute;
+            width:125px;
+            top:0;
+            left:0;
+            z-index: -1;
+        }
+        p{
+            @include text($color-black-0,$fs-1,$fw-normal);
+            letter-spacing: 0.2px;
+            margin-bottom:50px;
+        }
+        a{
+            padding:12px 21px;
+            border-radius:25px;
+            letter-spacing: 0.5px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        
+    }
+}

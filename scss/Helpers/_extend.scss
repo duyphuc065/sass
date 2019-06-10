@@ -1,0 +1,6 @@
+.btn{
+    @include text($color-blue-0,$fs-0,$fw-normal);
+    background-color: $color-white-0;
+    border:1px solid $color-blue-0;
+    text-transform: uppercase;
+}

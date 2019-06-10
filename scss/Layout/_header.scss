@@ -1,0 +1,69 @@
+.header {
+    .nav__header {
+        padding: 27px 0px;
+        transition: all 0.5s ease-in-out;
+
+        .navbar-brand {
+            @include text($color-black-0, $fs-2, $fw-bold);
+            padding: 14px 0px 14px 18px;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                padding: 0px 14px;
+
+                .nav-link {
+                    @include text($color-black-0, $fs-0, $fw-normal);
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $color-blue-0;
+                    }
+
+                }
+
+                &.active {
+                    .nav-link {
+                        color: $color-blue-0;
+                    }
+                }
+            }
+
+
+        }
+
+        .btn-download {
+            padding: 16px 35px;
+            border-radius: 0;
+            color: $color-blue-0;
+            box-shadow: 0 5px 10px 0 rgba(214, 218, 232, 0.51);
+            border-image-source: linear-gradient($color-blue-1, $color-blue-0);
+            -webkit-border-image-source: linear-gradient($color-blue-1, $color-blue-0);
+            -moz-border-image-source: linear-gradient($color-blue-1, $color-blue-0);
+            -o-border-image-source: linear-gradient($color-blue-1, $color-blue-0);
+            border-image-slice: 1;
+            margin-left: 14px;
+        }
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $color-white-0 !important;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1) !important;
+        padding: 10px 0px 10px 0px;
+    }
+
+    @media screen and (max-width:768px) {
+        .nav__header{
+            img{
+                width:32px;
+                height:32px;
+            }
+                    
+        }        
+    }
+
+
+}

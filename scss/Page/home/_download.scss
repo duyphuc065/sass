@@ -1,0 +1,21 @@
+.download {
+    padding: 36px 0px 500px 0px;
+    background-image: url("../img/city.svg"), linear-gradient(to top, #ffffff, #fafafd 22%, #f5f6fb);
+    background-repeat: no-repeat;
+    height: 326px;
+    background-position: top right;
+    h1{
+        @include text($color-black-0,$fs-3,$fw-bold);
+        margin-bottom:30px;
+    }
+    .download__image{
+        padding-top:60px;
+        
+    }
+    @media screen and (max-width:768px) {
+        padding-bottom: 0px;
+        .download__image{
+            display: none;
+        }
+    }
+}

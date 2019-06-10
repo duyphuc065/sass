@@ -1,0 +1,22 @@
+.banner{
+    background: url("../img/home-bg.svg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height:800px;
+    position: relative;
+    h1{
+        @include text($color-black-0,$fs-3,$fw-bold);
+        margin-top:250px;
+        margin-bottom:30px;
+    }
+    .banner__image{
+        margin-top:250px;
+    }
+    @media screen and (max-width:768px) {
+        height:420px;
+        .banner__image{
+            display: none;
+        }
+    }
+}
